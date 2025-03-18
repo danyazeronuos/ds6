@@ -15,4 +15,12 @@ public class TripService {
     public List<Trip> getAllTrips() {
         return tripRepository.findAll();
     }
+
+    public void save(Trip trip) {
+        tripRepository.save(trip);
+    }
+
+    public void delete(Integer id) {
+        tripRepository.deleteById(id);
+    }
 }
